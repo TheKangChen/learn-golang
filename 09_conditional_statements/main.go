@@ -45,13 +45,15 @@ func main() {
 		fmt.Println("You won't be able to reach here!")
 	}
 
+	// `fallthrough` will make switch statements behave like C switch statements without break
 	switch num4 := 100; {
 	case num4 == 50:
 		fmt.Println("'num4' is 50")
+		fallthrough
 	case num4 > 50:
 		fmt.Println("'num4' is greater than 50")
+		fallthrough
 	default:
 		fmt.Println("'num4' is lesser than 50")
 	}
-
 }
