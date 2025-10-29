@@ -23,4 +23,11 @@ func main() {
 	fmt.Println("Values")
 	fmt.Println(slice2d)
 	var _ [][][]int // 3d slice: [row][col][depth]
+
+	// Printing nd slices
+	for row := range slice2d {
+		for col := range slice2d[row] {
+			fmt.Print(slice2d[row][col], " ")
+		}
+	}
 }
