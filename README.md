@@ -22,17 +22,25 @@ Learn Go with the following materials:
 - 08 pointers
 - 09 conditional statements
 - 10 loops
-- 11 loop control & labels
+- 11 loop control and labels
 - 12 functions
 - 13 recursions
 - 14 higher order functions
 - 15 closures
+- 16 logging
+- 17 arrays and slices
+- 18 bytes
 
 
 ## Exercises
 
-- 05 temperature converter
-- 06 string exercise
-- 09 conditionals exercise
-- 11 goto label exercise
-- 14 filter
+- 05-1 temperature converter
+- 06-1 string exercise
+- 09-1 conditionals exercise
+- 11-1 goto label exercise
+- 14-1 filter
+- 17-1 image gallery
+- 17-2 insert slice in slice
+- 17-3 slice filtering
+- 17-4 bubble sort
+- 17-5 reverse string
