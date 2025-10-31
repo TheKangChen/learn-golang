@@ -32,9 +32,15 @@ func main() {
 		fmt.Println(matchedStrings)
 	}
 
+	// FindStringSubmatch():
 	// If there are capture groups in the regex pattern, use FindSubmatch() to access them
 	// Index: [0] full match; [1:] groups
 	re = regexp.MustCompile(`a(x*)b(y|z)c`)
 	fmt.Printf("%q\n", re.FindStringSubmatch("-axxxbyc-"))
 	fmt.Printf("%q\n", re.FindStringSubmatch("-abzc-"))
+
+	// ReplaceAllString() & ReplaceAllStringFunc(): Replacing matched strings with string or formating function that returns a string
+	re = regexp.MustCompile(pat)
+	str := re.ReplaceAllString(searchIn, "##.##")
+	fmt.Println(str)
 }
